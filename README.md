@@ -1,6 +1,5 @@
 # metasploit_termux
-Execute these commands
----
-chmod +x msfter.py
-python msfter.py
----
+Execute these commands:
+1)chmod +x msfter.py
+2)python msfter.py
+
