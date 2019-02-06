@@ -1,2 +1,2 @@
 # metasploit_termux
-Установка metasploit'а без ошибок!
+A simple script to install a metasploit without errors
