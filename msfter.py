@@ -1,6 +1,5 @@
 import os
 import time
-sl = time.sleep
 
 print("""
              _____         
@@ -12,15 +11,22 @@ print("""
 Created By otx2s
 Ver: 1.0
 ---
+
 """)
 
 fff = input("[???] Do you want install metasploit? (y/n): ")
 if fff == "y":
-	print("=======================================")
+	print("======================================")
 	print("[+] Jesus, it will take a lot of time!")
-	print("=======================================")
+	print("======================================")
+	os.system ("pkg update -y")
 	os.system ("cd /data/data/com.termux/files/home && git clone https://github.com/Hax4us/Metasploit_termux")
 	os.system ("cd /data/data/com.termux/files/home/Metasploit_termux && chmod +x metasploit.sh")
+	os.system ("cd /data/data/com.termux/files/home/Metasploit_termux && bash metasplot.sh")
+	os.system ("cd /data/data/com.termux/files/home && bundle init")
+	os.system ("cd /data/data/com.termux/files/home && gem install bundler -v 1.16.1")
+	os.system ("cd /data/data/com.termux/files/home && bundle install -j5")
+	os.system ("cd /data/data/com.termux/files/home/Metasploit_termux && bash metasplot.sh")
 	print("=====================================")
 	print("[+] Metasploit installed successfully")
 	print("Type 'msfconsole' to start.")
@@ -28,9 +34,7 @@ if fff == "y":
 
 elif fff == "n":
 	print("\nGoodbye...")
-	sl(1)
 	
 else:
 	print("\nSomething wrond!")
 	print("Restart script!")
-	sl(1)
