@@ -1,2 +1,2 @@
-# msf_termux
+# metasploit_termux
 A simple script to install a metasploit without errors
