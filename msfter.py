@@ -39,5 +39,5 @@ elif fff == "n":
 	
 else:
 	print("\nSomething wrond!")
-	print("\nRestart script!")
+	print("Restart script!")
 	sl(1)
