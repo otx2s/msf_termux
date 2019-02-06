@@ -1,2 +1,6 @@
 # metasploit_termux
-A simple script to install a metasploit without errors
+Execute these commands
+---
+chmod +x msfter.py
+python msfter.py
+---
