@@ -33,6 +33,11 @@ if fff == "y":
 	print("Type 'msfconsole' to start.")
 	print("=====================================")
 
-else:
+elif fff == "n":
 	print("\nGoodbye...")
+	sl(1)
+	
+else:
+	print("\nSomething wrond!")
+	print("\nRestart script!")
 	sl(1)
