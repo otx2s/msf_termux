@@ -17,7 +17,7 @@ Ver: 1.0
 fff = input("[???] Do you want install metasploit? (y/n): ")
 if fff == "y":
 	print("=======================================")
-	print("[+] Jesus, it will take a lot of time!!")
+	print("[+] Jesus, it will take a lot of time!")
 	print("=======================================")
 	os.system ("pkg update -y")
 	os.system ("pkg install -y curl")
