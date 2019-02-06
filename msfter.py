@@ -19,7 +19,6 @@ if fff == "y":
 	print("=======================================")
 	print("[+] Jesus, it will take a lot of time!")
 	print("=======================================")
-	os.system ("pkg update -y")
 	os.system ("cd /data/data/com.termux/files/home && git clone https://github.com/Hax4us/Metasploit_termux")
 	os.system ("cd /data/data/com.termux/files/home && cd Metasploit_termux")
 	os.system ("cd /data/data/com.termux/files/home && chmod +x metasploit.sh")
