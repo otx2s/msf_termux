@@ -28,7 +28,7 @@ if fff == "y":
 	os.system ("cd /data/data/com.termux/files/home/Metasploit_termux && bash metasplot.sh")
 	print("=====================================")
 	print("[+] Metasploit installed successfully")
-	print("Type 'msfconsole' to start.")
+	print("[+] Type 'msfconsole' to start.")
 	print("=====================================")
 
 elif fff == "n":
