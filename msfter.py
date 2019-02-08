@@ -13,7 +13,7 @@ Ver: 1.0
 
 """)
 
-fff = input("[???] Do you want install metasploit? (y/n): ")
+fff = input("[???] Do you want to install metasploit? (y/n): ")
 if fff == "y":
 	print("======================================")
 	print("[+] Jesus, it will take a lot of time!")
