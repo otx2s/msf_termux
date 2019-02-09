@@ -4,4 +4,6 @@ Run these commands:
 
 1. pkg install git
 2. pkg install python2
-3. python2 msfter.py
+3. git clone https://github.com/otx2s/msf_termux
+4. cd msf_termux
+5. python2 msfter.py
