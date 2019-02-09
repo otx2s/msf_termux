@@ -3,6 +3,9 @@ import time
 
 sl = time.sleep
 
+if sys.platform == "linux" or sys.platform == "linux2":
+	B = "\033[34m"
+
 msfter_logo = """
     dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb 
    dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP 
@@ -17,7 +20,15 @@ dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP
 """
 
 def logo():
-	print msfter_logo
+	print(B+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
+	print(B+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
+	print(B+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
+	print(B+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
+	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP')    
+
+ 	print "[01] Install Metasploit"
+ 	print "[02] Info"
+ 	print "[03] Exit:"
 
 def install():
 	os.system ("pkg update -y")
