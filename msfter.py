@@ -6,6 +6,7 @@ sl = time.sleep
 
 if sys.platform == "linux" or sys.platform == "linux2":
 	B = "\033[34m"
+	W = "\033[0m"
 
 msfter_logo = """
     dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb 
@@ -25,7 +26,7 @@ def logo():
 	print(B+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
 	print(B+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
 	print(B+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
-	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP')    
+	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
 
  	print "[01] Install Metasploit"
  	print "[02] Info"
