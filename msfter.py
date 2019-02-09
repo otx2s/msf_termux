@@ -8,19 +8,6 @@ if sys.platform == "linux" or sys.platform == "linux2":
 	B = "\033[34m"
 	W = "\033[0m"
 
-msfter_logo = """
-    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb 
-   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP 
-  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"  
- dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF   
-dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP    
-
- [01] Install Metasploit
- [02] Info
- [03] Exit
-
-"""
-
 def logo():
 	print " "
 	print(B+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
@@ -31,8 +18,9 @@ def logo():
 	print " "
  	print " [01] Install Metasploit"
  	print " [02] Info"
- 	print " [03] Exit:"
+ 	print " [03] Exit"
 	print " "
+	
 def install():
 	os.system ("pkg update -y")
 	os.system ("cd $HOME && git clone https://github.com/Hax4us/Metasploit_termux")
@@ -44,6 +32,7 @@ def install():
 	os.system ("cd $HOME/Metasploit_termux && bash metasploit.sh ")
 
 def main():
+	os.system("clear")
 	logo()
 	fff = raw_input("msfter > ")
 	if fff == "1" or fff == "01":
