@@ -22,16 +22,17 @@ dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP
 """
 
 def logo():
+	print " "
 	print(B+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
 	print(B+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
 	print(B+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
 	print(B+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
 	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
-
- 	print "[01] Install Metasploit"
- 	print "[02] Info"
- 	print "[03] Exit:"
-
+	print " "
+ 	print " [01] Install Metasploit"
+ 	print " [02] Info"
+ 	print " [03] Exit:"
+	print " "
 def install():
 	os.system ("pkg update -y")
 	os.system ("cd $HOME && git clone https://github.com/Hax4us/Metasploit_termux")
