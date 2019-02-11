@@ -1,8 +1,6 @@
 import os
 import sys
-import time
-
-sl = time.sleep
+from time import sleep as sl
 
 if sys.platform == "linux" or sys.platform == "linux2":
 	B = "\033[34m"
