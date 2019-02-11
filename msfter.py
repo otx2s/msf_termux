@@ -14,9 +14,9 @@ def logo():
 	print(B+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
 	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
 	print " "
- 	print " [01] Install Metasploit"
- 	print " [02] Info"
- 	print " [03] Exit"
+ 	print "   [01] Install Metasploit"
+ 	print "   [02] Info"
+ 	print "   [03] Exit"
 	print " "
 	
 def install():
