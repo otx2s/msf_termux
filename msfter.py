@@ -23,11 +23,11 @@ def install():
 	os.system("pkg update -y")
 	os.system("cd $HOME && git clone https://github.com/Hax4us/Metasploit_termux")
 	os.system("cd $HOME/Metasploit_termux && chmod +x metasploit.sh")
-	os.system("cd $HOME/Metasploit_termux && bash metasploit.sh")
+	os.system("cd $HOME/Metasploit_termux && ./metasploit.sh")
 	os.system("cd $HOME && bundle init > hdh.txt && rm -rf hdh.txt")
 	os.system("cd $HOME && gem install bundler -v 1.16.1")
 	os.system("cd $HOME && bundle install -j5")
-	os.system("cd $HOME/Metasploit_termux && bash metasploit.sh ")
+	os.system("cd $HOME/Metasploit_termux && ./metasploit.sh ")
 
 def main():
 	os.system("clear")
