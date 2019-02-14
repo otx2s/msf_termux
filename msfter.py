@@ -29,7 +29,7 @@ def install():
 	os.system("cd $HOME && gem install bundler -v 1.16.1")
 	os.system("cd $HOME && bundle install -j5")
 	os.system("cd $HOME && bash metasploit.sh ")
-	os.system("cd $HOME && rm -rf README.md apk.rb database.yml metasploit.sh")
+	os.system("cd $HOME && rm -rf README.md apk.rb database.yml metasploit.sh Metasploit_termux")
 	
 
 def main():
