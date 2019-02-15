@@ -1,5 +1,5 @@
 # msf_termux
-This script allows you to install metasploit without errors
+## This script allows you to install metasploit without errors
 Run these commands:
 
 1. pkg install git
