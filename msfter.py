@@ -57,7 +57,7 @@ def main():
 	elif fff == "2" or fff == "02":
 		print (R+'____________________________')
 		print (R+'||========================||')
-		print (R+'||    Created By'+G+'otx2s'+R+'||')
+		print (R+'||    Created By '+G+'otx2s'+R+' ||')
 		print (R+'||    ----------------    ||')
 		print (R+'||From podval with love :3||')
 		print (R+'||========================||')
