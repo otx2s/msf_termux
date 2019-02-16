@@ -15,14 +15,14 @@ if sys.platform == "linux" or sys.platform == "linux2":
 	P = random.choice(rand)
 
 def logo():
-	print(W+'            .            O                            + ')
-	print(W+' X                               +                     ')
-	print(P+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
-	print(P+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
-	print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
-	print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
-	print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP')    
-	print(W+'     x                   .                         .    ')
+	print(W+'            .            O                            +   ')
+	print(W+' X                               +                        ')
+	print(P+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb    ')
+	print(P+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP    ') 
+	print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"     ')  
+	print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF      ')   
+	print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP       ')    
+	print(W+'     x                   .                         .      ')
 	print(W+'                 +                      o               '+W)
 	print " "
  	print "         -=[01] Install Metasploit"
