@@ -11,7 +11,7 @@ if sys.platform == "linux" or sys.platform == "linux2":
 	R = "\033[31;1m"
 	C = "\033[36;1m"
 	
-	rand = (B,Y,G,W,R,C)
+	rand = (B,Y,G,R,C)
 	P = random.choice(rand)
 
 def logo():
