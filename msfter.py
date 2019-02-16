@@ -1,22 +1,30 @@
 import os
 import sys
+import random
 from time import sleep as sl
 
 if sys.platform == "linux" or sys.platform == "linux2":
-	B = "\033[34m"
-	W = "\033[0m"
+	B = "\033[34;1m"
+	Y = "\033[33;1m"
+	G = "\033[32;1m"
+	W = "\033[0;1m"
+	R = "\033[31;1m"
+	C = "\033[36;1m"
+	
+	rand = (B,Y,G,W,R,C)
+	P = random.choice(rand)
 
 def logo():
 	print " "
-	print(B+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
-	print(B+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
-	print(B+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
-	print(B+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
-	print(B+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
+	print(P+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
+	print(P+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
+	print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
+	print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
+	print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
 	print " "
- 	print "      *-=[01] Install Metasploit"
- 	print "  *-==*==[02] Info"
- 	print "      *-=[03] Exit"
+ 	print "         -=[01] Install Metasploit"
+ 	print "   + -- --=[02] Info"
+ 	print "   + -- --=[03] Exit"
 	print " "
 	
 def install():
@@ -47,16 +55,14 @@ def main():
 		print "====================================="
 
 	elif fff == "2" or fff == "02":
-		print """
-		____________________________
-		||========================||
-		||    Created By otx2s    ||
-		||    ----------------    ||
-		||From podval with love :3||
-		||========================||
-		||                        ||
-		~~                        ~~ 
-		"""
+		print (R+'____________________________')
+		print (R+'||========================||')
+		print (R+'||    Created By'+G+'otx2s'+R+'||')
+		print (R+'||    ----------------    ||')
+		print (R+'||From podval with love :3||')
+		print (R+'||========================||')
+		print (R+'||                        ||')
+		print (R+'~~                        ~~'+W)
 		raw_input("(Press ENTER) ")
 		os.system("clear")
 		main()
