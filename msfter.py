@@ -15,12 +15,15 @@ if sys.platform == "linux" or sys.platform == "linux2":
 	P = random.choice(rand)
 
 def logo():
-	print " "
+	print(W+'            .            O                            + ')
+	print(W+' X                               +                     ')
 	print(P+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb')
 	print(P+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP') 
 	print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"')  
 	print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF')   
-	print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP'+W)    
+	print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP')    
+	print(W+'     x                   .                         .    ')
+	print(W+'                 +                      o               '+W)
 	print " "
  	print "         -=[01] Install Metasploit"
  	print "   + -- --=[02] Info"
@@ -55,24 +58,24 @@ def main():
 		print "====================================="
 
 	elif fff == "2" or fff == "02":
-		print (R+'____________________________')
-		print (R+'||========================||')
-		print (R+'||    Created By '+G+'otx2s'+R+' ||')
-		print (R+'||    ----------------    ||')
-		print (R+'||From podval with love :3||')
-		print (R+'||========================||')
-		print (R+'||                        ||')
-		print (R+'~~                        ~~'+W)
+		print (W+'____________________________')
+		print (W+'||========================||')
+		print (W+'||    Created By '+B+'otx2s'+W+'    ||')
+		print (W+'||    ----------------    ||')
+		print (W+'||From podval with love :3||')
+		print (W+'||========================||')
+		print (W+'||                        ||')
+		print (W+'~~                        ~~'+W)
 		raw_input("(Press ENTER) ")
 		os.system("clear")
 		main()
 
 	elif fff == "3" or fff == "03":
-		print "\nGoodbye..."
+		print "\nGoodbye...\n"
 		sl(1)
 		
 	else:
-		print "\nERROR: Check your command!"
+		print (R+'\nERROR'+W+': Wrong command => '+ fff)
 		sl(1)
 		os.system("clear")
 		main()
