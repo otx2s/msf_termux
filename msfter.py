@@ -65,11 +65,11 @@ def main():
     install()
     print "====================================="
     print (G+'[+]'+W+' Metasploit installed')
-    print (G+'[+]'+W+' Type "msfconsole" to start.')
+    print (G+'[+]'+W+' Type "'+G+'msfconsole'+W+'" to start.')
     print "====================================="
   
   elif fff == "2" or fff == "02":
-    yas = raw_input("You sure? (y/n) ")
+    yas = raw_input("\nYou sure? (y/n): ")
     if yas == "y":
       os.system("clear")
       print "\n===================================="
@@ -91,7 +91,7 @@ def main():
       main()
 
   elif fff == "3" or fff == "03":
-    print (W+'____________________________')
+    print (W+'\n____________________________')
     print (W+'||========================||')
     print (W+'||    Created By '+B+'otx2s'+W+'    ||')
     print (W+'||    ----------------    ||')
