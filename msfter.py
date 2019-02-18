@@ -56,7 +56,7 @@ def remove():
 
 os.system("clear")
 print(B+'\n[*]'+W+' Starting msfter\n')
-sl(2)
+sl(1)
 
 def main():
   os.system("clear")
