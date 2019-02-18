@@ -54,6 +54,10 @@ def remove():
 	os.system("cd $msfpath/metasploit-framework/")
 	os.system("rm -rf $msfpath/metasploit-framework")
 
+os.system("clear")
+print(B+'\n[*]'+W+' Starting msfter\n')
+sl(1)
+
 def main():
   os.system("clear")
   logo()
