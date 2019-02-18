@@ -63,26 +63,26 @@ def main():
   logo()
   fff = raw_input("msfter > ")
   if fff == "1" or fff == "01":
-    print "\n======================================"
+    print (W+'\n======================================')
     print (G+'[+]'+W+' Jesus, it will take a lot of time!')
-    print "======================================"
+    print (W+'======================================\n')
     install()
-    print "====================================="
+    print (W+'=====================================')
     print (G+'[+]'+W+' Metasploit installed')
     print (G+'[+]'+W+' Type "'+G+'msfconsole'+W+'" to start.')
-    print "====================================="
+    print (W+'=====================================\n')
   
   elif fff == "2" or fff == "02":
     yas = raw_input("\nYou sure? (y/n): ")
     if yas == "y":
       os.system("clear")
-      print "\n===================================="
+      print (W+'\n=====================================')
       print (G+'[+]'+W+' Removing Metasploit')
-      print "====================================="
+      print (W+'=====================================')
       remove()
-      print "\n===================================="
+      print (W+'\n=====================================')
       print (G+'[+]'+W+' Metasploit removed')
-      print "====================================="
+      print (W+'=====================================')
       os.system("clear")
       main()
     elif yas == "n":
