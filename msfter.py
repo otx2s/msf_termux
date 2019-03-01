@@ -40,7 +40,6 @@ def install():
 	os.system("cd $HOME && bash metasploit.sh")
 	os.system("cd $HOME && wget https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt")
 	os.system("cd $HOME && bash fix-ruby-bigdecimal.sh.txt")
-	os.system("cd $HOME && patchelf --print-needed $PREFIX/lib/ruby/2.6.0/aarch64-linux-android/bigdecimal/util.so")
 	os.system("cd $HOME && export LD_PRELOAD=$LD_PRELOAD:$PREFIX/lib/ruby/gems/2.6.0/gems/bigdecimal-1.4.3/ext/bigdecimal/bigdecimal.so")
 
 def remove():
