@@ -34,16 +34,14 @@ def logo():
 	
 	
 def install():
-	os.system("pkg install unstable-repo && pkg upgrade -y")
-	os.system("cd $HOME && cd msf_termux/")
-	os.system("cp * $HOME")
-	os.system("cd $HOME && chmod +x metasploit.sh")
+	os.system("cd $HOME && pkg install unstable-repo -y")
+	os.system("cd $HOME && pkg update -y")
+	os.system("cd $HOME && wget https://Auxilus.github.io/metasploit.sh")
 	os.system("cd $HOME && bash metasploit.sh")
-	os.system("cd $HOME && bundle init > hdh.txt && rm -rf hdh.txt")
-	os.system("cd $HOME && gem install bundler -v 1.16.1")
-	os.system("cd $HOME && bundle install -j5")
-	os.system("cd $HOME && bash metasploit.sh ")
-	os.system("cd $HOME && rm -rf README.md database.yml metasploit.sh")
+	os.system("cd $HOME && wget https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt")
+	os.system("cd $HOME && bash fix-ruby-bigdecimal.sh.txt")
+	os.system("cd $HOME && patchelf --print-needed $PREFIX/lib/ruby/2.6.0/aarch64-linux-android/bigdecimal/util.so")
+	os.system("cd $HOME && export LD_PRELOAD=$LD_PRELOAD:$PREFIX/lib/ruby/gems/2.6.0/gems/bigdecimal-1.4.3/ext/bigdecimal/bigdecimal.so")
 
 def remove():
 	os.system("cd $HOME")
