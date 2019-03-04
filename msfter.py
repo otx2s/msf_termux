@@ -34,13 +34,8 @@ def logo():
 	
 	
 def install():
-	os.system("cd $HOME && pkg install unstable-repo -y")
-	os.system("cd $HOME && pkg update -y")
-	os.system("cd $HOME && wget https://Auxilus.github.io/metasploit.sh")
-	os.system("cd $HOME && bash metasploit.sh")
-	os.system("cd $HOME && wget https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt")
-	os.system("cd $HOME && bash fix-ruby-bigdecimal.sh.txt")
-	os.system("cd $HOME && export LD_PRELOAD=$LD_PRELOAD:$PREFIX/lib/ruby/gems/2.6.0/gems/bigdecimal-1.4.3/ext/bigdecimal/bigdecimal.so")
+	os.system("pkg install unstable-repo && pkg install ruby -y")
+	os.system("pkg install metasploit")
 
 def remove():
 	os.system("cd $HOME")
