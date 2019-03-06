@@ -47,7 +47,7 @@ def remove():
 	os.system("rm -rf $msfpath/metasploit-framework")
 
 os.system("clear")
-print(R+"\nThis project is dead because the entire Metasploit setup has been reduced to two commands!\n")
+print(R+"\nThis project is dead because the entire Metasploit setup has been reduced to two commands!")
 print(R+"But if you want to use this script, press "+G+"ENTER"+W)
 raw_input("")
 
