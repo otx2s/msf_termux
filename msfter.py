@@ -48,7 +48,7 @@ def remove():
 
 os.system("clear")
 print(R+"\nThis project is dead because the entire Metasploit setup has been reduced to two commands!\n")
-print(R+"But if you want to use this script, press "+G+"ENTER\n"+W)
+print(R+"But if you want to use this script, press "+G+"ENTER"+W)
 raw_input("")
 
 def main():
