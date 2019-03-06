@@ -23,7 +23,7 @@ def logo():
   print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"     ')  
   print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF      ')   
   print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP       ')
-  print(W+'     x     ['+R+'v:DEAD'+W+']    .                         .      ')
+  print(W+'     x     ['+R+'DEAD'+W+']    .                         .      ')
   print(W+'                 +                      o               '+W)
   print " "
   print (W+'   '+r+'[01]'+W+' Install Metasploit')
