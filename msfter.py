@@ -1,6 +1,5 @@
 import os
 import sys
-import random
 from time import sleep as sl
 
 if sys.platform == "linux" or sys.platform == "linux2":
@@ -11,18 +10,15 @@ if sys.platform == "linux" or sys.platform == "linux2":
   R = "\033[31;1m"
   C = "\033[36;1m"
   r = "\033[31m"
-	
-  rand = (B,Y,G,R,C)
-  P = random.choice(rand)
 
 def logo():
   print(W+'            .            O                            +   ')
   print(W+' X                               +                        ')
-  print(P+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb    ')
-  print(P+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP    ') 
-  print(P+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"     ')  
-  print(P+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF      ')   
-  print(P+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP       ')
+  print(G+'    dMMMMMMMMb .dMMMb  dMMMMMP dMMMMMMP dMMMMMP dMMMMb    ')
+  print(G+'   dMP"dMP"dMPdMP" VP dMP        dMP   dMP     dMP.dMP    ') 
+  print(G+'  dMP dMP dMP VMMMb  dMMMP      dMP   dMMMP   dMMMMK"     ')  
+  print(G+' dMP dMP dMPdP .dMP dMP        dMP   dMP     dMP"AMF      ')   
+  print(G+'dMP dMP dMP VMMMP" dMP        dMP   dMMMMMP dMP dMP       ')
   print(W+'     x     ['+R+'DEAD'+W+']    .                         .      ')
   print(W+'                 +                      o               '+W)
   print " "
