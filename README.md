@@ -1,6 +1,6 @@
 # msf_termux
 ## This script allows you to install metasploit without errors
-## Забытый и погребенный под слоем пыли скрипт. Ты стал историей!
+## Забытый и погребенный под слоем пыли скрипт. Теперь ты можешь уйти на покой, ты - история!
 Run these commands :
 
 1. pkg install git
